@@ -76,9 +76,9 @@ header .text-wraper h1 {
 
 /* btn wraper  */
 .btn {
-    position: absolute;
-    top: 85%;
-    left: 5%;
+    position: relative;
+    top: 40%;
+    right: 36%;
     animation: btnslide .7s ease forwards;
 }
 
@@ -283,15 +283,14 @@ header .img-wraper img {
 }
 
 /* float img  */
-.section-1 .float_1 {
+.section-1 .float_2 {
     width: 120px;
-    position: absolute;
-    top: 150%;
-    left: 0%;
-    animation: float_1 3s ease-in-out infinite;
+    position: relative;
+    right: 45%;
+    animation: float_2 3s ease-in-out infinite;
 }
 
-@keyframes float_1 {
+@keyframes float_2 {
     0% {
         transform: translateY(0);
     }
@@ -306,14 +305,13 @@ header .img-wraper img {
 
 }
 
-.section-1 .float_2 {
-    position: absolute;
-    top: 108%;
-    left: 80%;
-    animation: float_2 3s ease-in-out infinite;
+.section-1 .float_1 {
+    position: relative;
+    left: 35%;
+    animation: float_1 3s ease-in-out infinite;
 }
 
-@keyframes float_2 {
+@keyframes float_1 {
     0% {
         transform: translateX(0);
     }
@@ -568,7 +566,7 @@ header .img-wraper img {
 /* section 4  */
 .section-4 {
     width: 100%;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction:column ;
     align-items: center;
@@ -577,15 +575,17 @@ header .img-wraper img {
 }
 
 .section-4 .div-container {
-    width: 100%s;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2%;
 }
 
 .section-4 .div-container .item{
-    width: 100%;
+    width: 20%;
+    margin-bottom: 2%;
     text-align: center;
     background-color: #ffffff;
     border-radius: 16px;
@@ -655,16 +655,70 @@ header .img-wraper img {
 }
 
 .section-4 .item h5{
-        color: #eb0029;
+    color: #eb0029;
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
 .section-4 button{
+    color: #ffffff;
+    background-color: #eb0029;
+    border: none;
     padding: 13px 25px;
-    background-color:#eb0029;
+    font-size: 14px;
+    font-weight: 400;~
+}
+
+.section-5{
+    background-image:url(Images/ctaBG1_1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+
+}
+.section-5 .img-wraper img{
+    position: relative;
+    right: 30%;
+    width: 400px;
+    animation: pizza 3.5s ease-in-out infinite;
+}
+
+
+@keyframes pizza{
+0%{
+    transform: translateX(10%);
+}
+50%{
+    transform: translateX(30%);
+}
+100%{
+    transform: translateX(10%);
+}
+}
+
+.section-5 .text-wraper h3{
+color: #eb0029;
+}
+
+.section-5 .text-wraper h1{
+color: #f4f1ea;
+}
+
+.section-5 .text-wraper h2{
+color: #fc791a;
+}
+.section-5 .text-wraper button{
+    color: #ffffff;
+    background-color: #eb0029;
+    border: none;
+    padding: 13px 25px;
     font-size: 14px;
     font-weight: 400;
-    transition: 0.3s ease-in-out;
 }
